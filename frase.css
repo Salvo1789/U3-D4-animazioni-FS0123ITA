@@ -19,17 +19,17 @@ span{
 }
 
 span :first-child{
-    animation: words 20s linear 0s infinite;
+    animation: words 20s ease-in-out 0s infinite;
 }
 
 span :nth-child(2){
     opacity:0;
-    animation: words 20s linear 5s infinite;
+    animation: words 20s ease-in-out 5s infinite;
 }
 
 span :last-child{
     opacity:0;
-    animation: words 20s linear 17s infinite;
+    animation: words 20s ease-in-out 17s infinite;
 }
 
 
