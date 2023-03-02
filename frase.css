@@ -18,17 +18,24 @@ span{
     font-weight: bold;
 }
 
-span:first-child{
-    animation: words 5s linear infinite 0s;
+span :first-child{
+    animation: words 20s linear 0s infinite;
 }
 
-span:nth-child(2){
-    animation: words 5s linear infinite 10s;
+span :nth-child(2){
+    opacity:0;
+    animation: words 20s linear 5s infinite;
+}
+
+span :last-child{
+    opacity:0;
+    animation: words 20s linear 17s infinite;
 }
 
 
 @keyframes words{
-    30% {opacity:0; transform: translateY(-17px);}
-    40% {opacity:1;}
-    30% {opacity:0;}
+    25% {opacity:1;}
+    50% {opacity:0;}
+    25% {opacity:1;}
 }
+
