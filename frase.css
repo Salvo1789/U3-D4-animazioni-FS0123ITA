@@ -7,4 +7,28 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
+main{
+    width: 70%;
+    padding:2em;
+    border: 5px black solid;
+    font-size: 2em;
+}
 
+span{
+    font-weight: bold;
+}
+
+span:first-child{
+    animation: words 5s linear infinite 0s;
+}
+
+span:nth-child(2){
+    animation: words 5s linear infinite 10s;
+}
+
+
+@keyframes words{
+    30% {opacity:0; transform: translateY(-17px);}
+    40% {opacity:1;}
+    30% {opacity:0;}
+}
